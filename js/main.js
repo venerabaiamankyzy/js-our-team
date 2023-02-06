@@ -66,3 +66,17 @@ for (let i = 0; i < ourTeam.length; i++) {
     console.log(property + ": " + ourTeam[i][property]);
   }
 }
+
+// MILESTONE 2
+const teamEl = document.getElementById("team");
+for (let i = 0; i < ourTeam.length; i++) {
+  teamEl.innerHTML += `
+ <ul class="our-team">
+  <li class="member">
+    <h3 class="name">${ourTeam[i].name} ${ourTeam[i].lastname}</h3>
+    <p class="position">${ourTeam[i].position}</p>
+    <img class="photo">${ourTeam[i].photo}</img>
+  </li> 
+</ul>`;
+}
+console.log(teamEl);
