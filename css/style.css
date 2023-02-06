@@ -12,6 +12,7 @@ img {
 ul {
   box-shadow: 0 15px 35px rgb(0 0 0 / 32%);
   transition: all 0.5s;
+  border-radius: 8px;
 }
 
 ul:hover {
