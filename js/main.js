@@ -71,12 +71,15 @@ for (let i = 0; i < ourTeam.length; i++) {
 const teamEl = document.getElementById("team");
 for (let i = 0; i < ourTeam.length; i++) {
   teamEl.innerHTML += `
- <ul class="our-team">
-  <li class="member">
-    <img class="photo">${ourTeam[i].photo}</img>
-    <h3 class="name">${ourTeam[i].name} ${ourTeam[i].lastname}</h3>
-    <p class="position">${ourTeam[i].position}</p>    
-  </li> 
+  
+ <ul class="our-team d-flex p-5 border border-info">
+    <li class="member">
+      <div class = "d-flex flex-column justify-content-between >
+        <img class="photo">${ourTeam[i].photo}</img>
+        <h3 class="name mt-5">${ourTeam[i].name} ${ourTeam[i].lastname}</h3>
+        <p class="position mt-2">${ourTeam[i].position}</p> 
+      </div>   
+    </li> 
 </ul>`;
 }
 console.log(teamEl);

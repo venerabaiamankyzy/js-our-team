@@ -1,3 +1,19 @@
 li {
   list-style: none;
 }
+
+img {
+  height: 195px;
+  width: 195px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+ul {
+  box-shadow: 0 15px 35px rgb(0 0 0 / 32%);
+  transition: all 0.5s;
+}
+
+ul:hover {
+  transform: translateY(-30px);
+}
