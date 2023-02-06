@@ -18,42 +18,42 @@ const ourTeam = [
     name: "Wayne",
     lastname: "Barnett",
     position: "Founder & CEO",
-    photo: "./img/wayne-barnett-founder-ceo.jpg",
+    photo: `<img src = "./img/wayne-barnett-founder-ceo.jpg">`,
   },
 
   {
     name: "Angela",
     lastname: "Caroll",
     position: "Chief Editor",
-    photo: "./img/angela-caroll-chief-editor.jpg",
+    photo: `<img src = "./img/angela-caroll-chief-editor.jpg">`,
   },
 
   {
     name: "Walter",
     lastname: "Gordon",
     position: "Office Manager",
-    photo: "./img/walter-gordon-office-manager.jpg",
+    photo: `<img src = "./img/walter-gordon-office-manager.jpg"`,
   },
 
   {
     name: "Angela",
     lastname: "Lopez",
     position: "Social Media Manager	",
-    photo: "./img/angela-lopez-social-media-manager.jpg",
+    photo: `<img src = "./img/angela-lopez-social-media-manager.jpg">`,
   },
 
   {
     name: "Scott",
     lastname: "Estrada",
     position: "Developer",
-    photo: "./img/scott-estrada-developer.jpg",
+    photo: `<img src="./img/scott-estrada-developer.jpg">`,
   },
 
   {
     name: "Barbara",
     lastname: "Ramos",
     position: "Graphic Designer",
-    photo: "./img/barbara-ramos-graphic-designer.jpg",
+    photo: `<img src="./img/barbara-ramos-graphic-designer.jpg">`,
   },
 ];
 // console.log(ourTeam);
@@ -73,9 +73,9 @@ for (let i = 0; i < ourTeam.length; i++) {
   teamEl.innerHTML += `
  <ul class="our-team">
   <li class="member">
-    <h3 class="name">${ourTeam[i].name} ${ourTeam[i].lastname}</h3>
-    <p class="position">${ourTeam[i].position}</p>
     <img class="photo">${ourTeam[i].photo}</img>
+    <h3 class="name">${ourTeam[i].name} ${ourTeam[i].lastname}</h3>
+    <p class="position">${ourTeam[i].position}</p>    
   </li> 
 </ul>`;
 }
