@@ -5,7 +5,7 @@
 
 // MILESTONE 1: Stampare su console, per ogni membro del team, le informazioni di nome, ruolo e la stringa della foto
 //
-// MILESTONE 2: tampare le stesse informazioni su DOM sottoforma di stringhe
+// MILESTONE 2: stampare le stesse informazioni su DOM sottoforma di stringhe
 
 // BONUS 1: Trasformare la stringa foto in una immagine effettiva
 //
@@ -56,8 +56,13 @@ const ourTeam = [
     photo: "./img/barbara-ramos-graphic-designer.jpg",
   },
 ];
-console.log(ourTeam);
-console.log(ourTeam[1]);
-console.log(ourTeam[1].name);
+// console.log(ourTeam);
+// console.log(ourTeam[1]);
+// console.log(ourTeam[1].name);
 
 // MILESTONE 1
+for (let i = 0; i < ourTeam.length; i++) {
+  for (property in ourTeam[i]) {
+    console.log(property + ": " + ourTeam[i][property]);
+  }
+}
